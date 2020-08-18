@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/rounded"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Country"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:maxWidth="100dp"
+        android:text="New Confirmed / total confirmed"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/country"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/newconto"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:progressView_colorBackground="#8F8E8E"
+        app:progressView_colorProgress="#1976D2"
+        app:progressView_labelColorInner="#fff"
+        app:progressView_labelColorOuter="#000"
+        app:progressView_labelSize="12sp"
+        app:progressView_labelText="score"
+        app:progressView_max="100"
+        app:progressView_progress="65"
+        app:progressView_radius="12dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:maxWidth="100dp"
+        android:text="New Deaths / total Deaths"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/newdto"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/newconto"
+        app:layout_constraintStart_toStartOf="@+id/newconto"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:progressView_colorBackground="#8F8E8E"
+        app:progressView_colorProgress="#D32F2F"
+        app:progressView_labelColorInner="#fff"
+        app:progressView_labelColorOuter="#000"
+        app:progressView_labelSize="12sp"
+        app:progressView_labelText="score"
+        app:progressView_max="100"
+        app:progressView_progress="65"
+        app:progressView_radius="12dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:maxWidth="100dp"
+        android:text="New Recovered / total Recovered"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/newrecoto"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@+id/newdto"
+        app:layout_constraintStart_toStartOf="@+id/newdto"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:progressView_colorBackground="#8F8E8E"
+        app:progressView_colorProgress="#388E3C"
+        app:progressView_labelColorInner="#fff"
+        app:progressView_labelColorOuter="#000"
+        app:progressView_labelSize="12sp"
+        app:progressView_labelText="score"
+        app:progressView_max="100"
+        app:progressView_progress="65"
+        app:progressView_radius="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
