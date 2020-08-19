@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     ApiClient apiClient;
 
     RecyclerView recyclerView;
-    private static final Double  b = 8000000000d;
+    private static final String  b = "8 billion";
 
 
     @Override
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                   newco.setProgress(response.body().getGlobal().getNewConfirmed());
                   newco.setLabelText(response.body().getGlobal().getNewConfirmed().toString() + "/" + response.body().getGlobal().getTotalConfirmed().toString());
 
-                  totlco.setMax(b.floatValue());
+                  totlco.setMax(Float.parseFloat(b));
                   totlco.setProgress(response.body().getGlobal().getTotalConfirmed());
                   totlco.setLabelText(response.body().getGlobal().getTotalConfirmed().toString() + "/" + b.toString());
 
